@@ -8,7 +8,7 @@ echo "Super simple example!\n";
 Log::always( 'This will always be logged');
 Log::info( 'This will be logged, if Config::debug is true');
 Log::error( 'This will be logged always as error');
-Log::system_error( 'bad bad error'  );
+Log::systemError( 'bad bad error'  );
 
 echo "Please open php system log: " . ini_get( 'error_log' ) . "\n";
 echo "and your debug log file: " . Config::$_strDebugLog. " !\n";
